@@ -1,3 +1,5 @@
+USE class12;
+
 DROP TABLE IF EXISTS usersContact, usersAddress, users, usersCredentials;
 
 CREATE TABLE users (

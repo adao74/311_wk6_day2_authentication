@@ -36,7 +36,9 @@ The other values can be found on your Auth0 profile after completing the pre-hom
 
 5. The app is using `nodemon` so you can use `npm start` and any changes made (and saved) will cause the server to restart automatically.
 
-6. Finally, in MySQL Workbench, run the `initialize.sql` script that is included in this project. You will run this on the "admin" database. You can simply copy the sql from the file into your MySQL Workbench console. Follow the steps under the `imgs` folder if you are having trouble with this.
+6. Finally, in MySQL Workbench, run the `initialize.sql` script that is included in this project. You will run this on the "admin" database. You can simply copy the sql from the file into your MySQL Workbench console. Follow the steps under the `imgs` folder if you are having trouble with this. 
+
+=> created a new database called "class 12" in the Workbench and updated the `initialize.sql` file to use this database 
 
 ## Overview
 
