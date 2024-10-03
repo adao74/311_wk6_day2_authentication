@@ -179,3 +179,15 @@ This is an example of application specific middleware. Every route will now pass
 ## Summary
 
 If all went according to plan we now have an API that is locked down with authentication and we have also added middleware on all of our routes that logs the current request and the associated date/time.
+
+Create JWT for a client/user:
+1. (Manually) added users to OAuth (via OAuth UI)
+2. FOR USERS YOU ADDED: Login route returns a jwt (from OAuth) (i.e. calling the login endpoint calls the OAuth endpoint)
+
+For client/user to use the JWT:
+1. Middleware to check the jwt / authentication (using OAuth) => add middleware to the routes you want
+2. Can test the middleware using the jwt from the OAuth UI (i.e. 401 status code if no jwt, 200 success if use jwt)
+
+Create a logger:
+1. Middleware to log request details
+(i.e. application-specific middleware: use middleware at top of file = uses middleware for all the routes)
